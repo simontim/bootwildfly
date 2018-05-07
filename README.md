@@ -3,7 +3,7 @@ Prima bisogna importare il tempalte di WildFly application server. Viene usato M
 
 Può essere fatto il deploy in Openshift con il seguente comando:
 
-	oc new-app wildfly:10.0~https://github.com/simontim/bootwildfly.git
+	oc new-app docker.io/openshift/wildfly-100-centos7:latest~https://github.com/simontim/bootwildfly.git
 
 
 Funziona anche su Openshift Online gratuitamente.
