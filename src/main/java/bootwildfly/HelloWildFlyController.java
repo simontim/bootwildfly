@@ -9,6 +9,10 @@ public class HelloWildFlyController {
 
     @RequestMapping("hello")
     public String sayHello(){
-        return ("Hello, SpringBoot on Wildfly");
+        int a = 2;
+        for (int i = 0; i < 3; i++) {
+        a=a*(i-1);
+        }
+        return (a);
     }
 }
