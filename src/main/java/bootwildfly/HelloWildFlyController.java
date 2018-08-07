@@ -8,7 +8,7 @@ public class HelloWildFlyController {
 
 
     @RequestMapping("hello")
-    public String sayHello(){
+    public double sayHello(){
         double a = 2;
         for (int i = 0; i < 200; i++) {
         a=a*(i+1);
