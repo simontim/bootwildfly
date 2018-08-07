@@ -8,9 +8,9 @@ public class HelloWildFlyController {
 
 
     @RequestMapping("hello")
-    public double sayHello(){
+    public double sayHello(@RequestParam(value="n", defaultValue="5") int n){
         double a = 2;
-        for (int i = 0; i < 200; i++) {
+        for (int i = 0; i < n; i++) {
         a=a*(i+1);
         }
         
